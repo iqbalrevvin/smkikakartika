@@ -35,11 +35,9 @@ class Site extends Public_Controller {
     }
 
     function login() {
-
         if ($this->auth->logged_in()) {
             $this->auth->is_logged_in(true);
         }
-
         $data = array();
         $data['title'] = 'Login';
         $school = $this->setting_model->get();
@@ -58,7 +56,6 @@ class Site extends Public_Controller {
             );
             $setting_result = $this->setting_model->get();
             $result = $this->staff_model->checkLogin($login_post);
-           
 
             if ($result) {
                 if($result->is_active){
@@ -113,8 +110,6 @@ class Site extends Public_Controller {
     }
 
     function forgotpassword() {
-
-
         $this->form_validation->set_rules('email', 'Email', 'trim|valid_email|required|xss_clean');
 
         if ($this->form_validation->run() == FALSE) {
