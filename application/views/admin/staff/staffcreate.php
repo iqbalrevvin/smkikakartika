@@ -203,7 +203,7 @@
 
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label for="exampleInputFile"><?php echo $this->lang->line('address'); ?> <?php echo $this->lang->line('current'); ?> </label>
+                                                <label for="exampleInputFile"><?php echo $this->lang->line('current'); ?> <?php echo $this->lang->line('address'); ?></label>
                                                 <div><textarea name="address" class="form-control"><?php echo set_value('address'); ?></textarea>
                                                 </div>
                                                 <span class="text-danger"></span></div>

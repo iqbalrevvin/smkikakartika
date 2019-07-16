@@ -268,22 +268,22 @@ class Customlib {
 
     function getDaysname() {
         $status = array();
-        $status['Monday'] = 'Senin';
-        $status['Tuesday'] = 'Selasa';
-        $status['Wednesday'] = 'Rabu';
-        $status['Thursday'] = 'Kamis';
-        $status['Friday'] = 'Jumat';
-        $status['Saturday'] = 'Sabtu';
-        $status['Sunday'] = 'Minggu';
+        $status['Monday'] = 'Monday';
+        $status['Tuesday'] = 'Tuesday';
+        $status['Wednesday'] = 'Wednesday';
+        $status['Thursday'] = 'Thursday';
+        $status['Friday'] = 'Friday';
+        $status['Saturday'] = 'Saturday';
+        $status['Sunday'] = 'Sunday';
         return $status;
     }
 
     function getcontenttype() {
         $status = array();
         $status['Assignments'] = 'Assignments';
-        $status['Study_material'] = 'Materi Ajar';
-        $status['Syllabus'] = 'Silabus';
-        $status['Other_download'] = 'Donwload Lainnya';
+        $status['Study_material'] = 'Study Material';
+        $status['Syllabus'] = 'Syllabus';
+        $status['Other_download'] = 'Other Download';
         return $status;
     }
 

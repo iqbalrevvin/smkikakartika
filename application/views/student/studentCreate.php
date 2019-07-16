@@ -301,7 +301,7 @@ if($this->rbac->hasPrivilege('import_student','can_view')){
                                         </div>
                                          <div class="col-md-3">
                                             <div class="form-group">
-                                                <label for="exampleInputFile"><?php echo $this->lang->line('photo'); ?> <?php echo $this->lang->line('father'); ?> </label>
+                                                <label for="exampleInputFile"><?php echo $this->lang->line('father'); ?> <?php echo $this->lang->line('photo'); ?></label>
                                                 <div><input class="filestyle form-control" type='file' name='father_pic' id="file" size='20' />
                                                 </div>
                                                 <span class="text-danger"><?php echo form_error('file'); ?></span></div>
@@ -331,7 +331,7 @@ if($this->rbac->hasPrivilege('import_student','can_view')){
                                         </div>
                                          <div class="col-md-3">
                                             <div class="form-group">
-                                                <label for="exampleInputFile"><?php echo $this->lang->line('photo'); ?> <?php echo $this->lang->line('mother'); ?> </label>
+                                                <label for="exampleInputFile"><?php echo $this->lang->line('mother'); ?> <?php echo $this->lang->line('photo'); ?></label>
                                                 <div><input class="filestyle form-control" type='file' name='mother_pic' id="file" size='20' />
                                                 </div>
                                                 <span class="text-danger"><?php echo form_error('file'); ?></span></div>
@@ -403,7 +403,7 @@ if($this->rbac->hasPrivilege('import_student','can_view')){
                                         </div>
                                          <div class="col-md-3">
                                             <div class="form-group">
-                                                <label for="exampleInputFile"><?php echo $this->lang->line('photo'); ?> <?php echo $this->lang->line('guardian'); ?> </label>
+                                                <label for="exampleInputFile"><?php echo $this->lang->line('guardian'); ?> <?php echo $this->lang->line('photo'); ?></label>
                                                 <div><input class="filestyle form-control" type='file' name='guardian_pic' id="file" size='20' />
                                                 </div>
                                                 <span class="text-danger"><?php echo form_error('file'); ?></span></div>
@@ -468,7 +468,7 @@ if($this->rbac->hasPrivilege('import_student','can_view')){
           ?>
                                             <div class="tshadow mb25 bozero">    
                                                 <h4 class="pagetitleh2">
-                                                    <?php echo $this->lang->line('details') . " " . $this->lang->line('transport'); ?>
+                                                    <?php echo $this->lang->line('transport') . " " . $this->lang->line('details'); ?>
                                                 </h4>
 
                                                 <div class="row around10">
@@ -513,7 +513,7 @@ if($this->rbac->hasPrivilege('import_student','can_view')){
           ?>
                                                  <div class="tshadow mb25 bozero">    
                                                 <h4 class="pagetitleh2">
-                                                    <?php echo $this->lang->line('details'); ?></label> <?php echo $this->lang->line('hostel'); ?></label>
+                                                    <?php echo $this->lang->line('hostel'); ?></label> <?php echo $this->lang->line('details'); ?></label>
                                                 </h4>
 
                                                 <div class="row around10">

@@ -217,10 +217,7 @@ $currency_symbol = $this->customlib->getSchoolCurrencyFormat();
                             <td align="center">
                                 <div style="position: absolute;left:15px"><img src="<?php echo base_url() ?>/uploads/school_content/logo/<?php echo $settinglist["image"] ?>" style="width: 70px;height: 70px;" /></div>
                                 <h1 style="margin: 0;"><?php echo $settinglist["name"]; ?></h1>
-                                <h5>
-                                    <?= $settinglist["address"] ?><br> 
-                                    <?php echo $this->lang->line('phone'); ?>: <?php echo $settinglist["phone"] ?>
-                                </h5>
+                                <h5><?php echo $settinglist["address"] ?> <?php echo $this->lang->line('phone'); ?>: <?php echo $settinglist["phone"] ?></h5>
                             </td>
                         </tr>
                         <tr>
@@ -265,17 +262,13 @@ $currency_symbol = $this->customlib->getSchoolCurrencyFormat();
                             <tr>
 
                                 <?php if (array_key_exists($j, $positive_allowance)) { ?>
-                                    <td><?= $positive_allowance[$j]["allowance_type"]; ?></td>
-                                    <td class="pttright reborder">
-                                        <?= number_format($positive_allowance[$j]["amount"]); ?>
-                                    </td>
+                                    <td><?php echo $positive_allowance[$j]["allowance_type"]; ?></td>
+                                    <td class="pttright reborder"><?php echo $positive_allowance[$j]["amount"]; ?></td>
                                 <?php } ?>
                                 <?php if (array_key_exists($j, $negative_allowance)) { ?>
 
-                                    <td class="pttleft"><?= $negative_allowance[$j]["allowance_type"]; ?></td>
-                                    <td class="text-right text-danger">
-                                        <?= number_format($negative_allowance[$j]["amount"]); ?>
-                                    </td>
+                                    <td class="pttleft"><?php echo $negative_allowance[$j]["allowance_type"]; ?></td>
+                                    <td class="text-right"><?php echo $negative_allowance[$j]["amount"]; ?></td>
                                 <?php } ?>
                             </tr>
                             <?php $j++;
@@ -284,9 +277,9 @@ $currency_symbol = $this->customlib->getSchoolCurrencyFormat();
 
                         <tr>
                             <th><?php echo $this->lang->line('total'); ?> <?php echo $this->lang->line('earning'); ?></th>
-                            <th class="pttright reborder"><?= number_format($result["total_allowance"]) ?></th>
+                            <th class="pttright reborder"><?php echo $result["total_allowance"] ?></th>
                             <th class="pttleft"><?php echo $this->lang->line('total'); ?> <?php echo $this->lang->line('deduction'); ?></th>
-                            <th class="text-right"><?= number_format($result["total_deduction"]) ?></th>
+                            <th class="text-right"><?php echo $result["total_deduction"] ?></th>
                         </tr>  
                     </table>   
 
@@ -296,21 +289,19 @@ $currency_symbol = $this->customlib->getSchoolCurrencyFormat();
                             <td><?php echo $payment_mode[$result["payment_mode"]]; ?></td>
                         </tr>
                         <tr>
-                            <th width="20%"><?php echo $this->lang->line('basic_salary'); ?>
-                                (<?php echo $currency_symbol; ?>)
-                            </th> 
-                            <td><?= number_format($result["basic"]) ?></td>
+                            <th width="20%"><?php echo $this->lang->line('basic_salary'); ?>(<?php echo $currency_symbol; ?>)</th> 
+                            <td><?php echo $result["basic"] ?></td>
                         </tr>
 
                         <tr>
                             <th width="20%"><?php echo $this->lang->line('gross_salary'); ?>(<?php echo $currency_symbol; ?>)</th> 
-                            <td><?= number_format($result["basic"] + $result["total_allowance"]) ?></td>
+                            <td><?php echo $result["basic"] + $result["total_allowance"] ?></td>
                         </tr>
 <?php if (!empty($result["tax"])) { ?>
 
                             <tr>
                                 <th width="20%"><?php echo $this->lang->line('tax'); ?>(<?php echo $currency_symbol; ?>)</th> 
-                                <td><?= number_format($result["tax"]) ?></td>
+                                <td><?php echo $result["tax"] ?></td>
                             </tr>
 
 
@@ -318,7 +309,7 @@ $currency_symbol = $this->customlib->getSchoolCurrencyFormat();
                         ?>
                         <tr>
                             <th width="20%"><?php echo $this->lang->line('net_salary'); ?>(<?php echo $currency_symbol; ?>)</th> 
-                            <td><?= number_format($result["net_salary"]) ?></td>
+                            <td><?php echo $result["net_salary"] ?></td>
                         </tr>
 
                     </table>  
