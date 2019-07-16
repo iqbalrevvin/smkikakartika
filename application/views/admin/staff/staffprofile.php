@@ -378,7 +378,7 @@ if ($staff["is_active"] == 1) {
                                 <div class="col-md-3 col-sm-6">
                                     <div class="staffprofile">
 
-                                        <h5><?php echo $this->lang->line('total'); ?> <?php echo $this->lang->line('net_salary'); ?> <?php echo $this->lang->line('paid'); ?></h5>
+                                        <h5> <?php echo $this->lang->line('net_salary'); ?> <?php echo $this->lang->line('paid'); ?></h5>
                                         <h4><?php
                                             if (!empty($salary["net_salary"])) {
                                                 echo $currency_symbol . $salary["net_salary"];
