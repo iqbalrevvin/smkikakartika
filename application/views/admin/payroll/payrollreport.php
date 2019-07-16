@@ -176,31 +176,31 @@ $currency_symbol = $this->customlib->getSchoolCurrencyFormat();
 
                                                     </td>
                                                     <td class="text text-right">
-                                                        <?php echo number_format($value['basic'], 2, '.', ''); ?>
+                                                        <?php echo number_format($value['basic']); ?>
                                                     </td>
 
                                                     <td class="text text-right">
-            <?php echo (number_format($value['total_allowance'], 2, '.', '')); ?>
+            <?php echo (number_format($value['total_allowance'])); ?>
                                                     </td>
                                                     <td class="text text-right">
                                                         <?php
                                                         $t = ($value['total_deduction']);
-                                                        echo (number_format($t, 2, '.', ''))
+                                                        echo (number_format($t))
                                                         ?>
                                                     </td>
                                                     <td class="text text-right">
-                                                        <?php echo number_format($value['basic'] + $value['total_allowance'], 2, '.', ''); ?>
+                                                        <?php echo number_format($value['basic'] + $value['total_allowance']); ?>
                                                     </td>
                                                     <td class="text text-right">
             <?php
             $t = ($value['tax']);
-            echo (number_format($t, 2, '.', ''))
+            echo (number_format($t))
             ?>
                                                     </td>
                                                     <td class="text text-right">
             <?php
             $t = ($value['net_salary']);
-            echo (number_format($t, 2, '.', ''))
+            echo (number_format($t))
             ?>
                                                     </td>
                                                 </tr>
@@ -215,13 +215,13 @@ $currency_symbol = $this->customlib->getSchoolCurrencyFormat();
                                                 <td></td>
                                                 <td></td>
                                                 <td class="text-right"><?php echo $this->lang->line('grand_total'); ?> </td>
-                                                <td class="text text-right"><?php echo ($currency_symbol . number_format($basic, 2, '.', '')); ?></td>
+                                                <td class="text text-right"><?php echo ($currency_symbol . number_format($basic)); ?></td>
 
-                                                <td class="text text-right"><?php echo ($currency_symbol . number_format($earnings, 2, '.', '')); ?></td>
-                                                <td class="text text-right"><?php echo ($currency_symbol . number_format($deduction, 2, '.', '')); ?></td>
-                                                <td class="text text-right"><?php echo ($currency_symbol . number_format($gross, 2, '.', '')); ?></td>
-                                                <td class="text text-right"><?php echo ($currency_symbol . number_format($tax, 2, '.', '')); ?></td>
-                                                <td class="text text-right"><?php echo ($currency_symbol . number_format($net, 2, '.', '')); ?></td>
+                                                <td class="text text-right"><?php echo ($currency_symbol . number_format($earnings)); ?></td>
+                                                <td class="text text-right"><?php echo ($currency_symbol . number_format($deduction)); ?></td>
+                                                <td class="text text-right"><?php echo ($currency_symbol . number_format($gross)); ?></td>
+                                                <td class="text text-right"><?php echo ($currency_symbol . number_format($tax)); ?></td>
+                                                <td class="text text-right"><?php echo ($currency_symbol . number_format($net)); ?></td>
 
 
 

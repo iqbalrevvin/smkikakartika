@@ -197,15 +197,16 @@
                                             <div class="form-group">
                                                 <label for="exampleInputEmail1"><?php echo $this->lang->line('marital_status'); ?></label>
                                                 <select class="form-control" name="marital_status">
-                                                    <option value=""><?php echo $this->lang->line('select'); ?></option>
-<?php foreach ($marital_status as $makey => $mavalue) {
-    ?>
-                                                        <option <?php
-    if ($staff["marital_status"] == $mavalue) {
-        echo "selected";
-    }
-    ?> value="<?php echo $mavalue; ?>"><?php echo $mavalue; ?></option>
-<?php } ?> 
+                                                    <option value="">
+                                                    <?php echo $this->lang->line('select'); ?></option>
+                                                        <?php foreach ($marital_status as $makey => $mavalue) {
+                                                            ?>
+                                                            <option <?php
+                                                            if ($staff["marital_status"] == $mavalue) {
+                                                                echo "selected";
+                                                            }
+                                                            ?> value="<?php echo $mavalue; ?>"><?php echo $mavalue; ?></option>
+                                                        <?php } ?> 
 
                                                 </select>
                                                 <span class="text-danger"><?php echo form_error('marital_status'); ?></span>
@@ -228,7 +229,7 @@
 
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label for="exampleInputFile"><?php echo $this->lang->line('current'); ?> <?php echo $this->lang->line('address'); ?></label>
+                                                <label for="exampleInputFile"><?php echo $this->lang->line('address'); ?> <?php echo $this->lang->line('current'); ?></label>
                                                 <div><textarea name="address" class="form-control"><?php echo $staff["local_address"] ?></textarea>
                                                 </div>
                                                 <span class="text-danger"></span></div>

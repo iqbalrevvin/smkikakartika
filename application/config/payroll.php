@@ -9,34 +9,34 @@ $config['staffattendance'] = array(
 );
 
 $config['contracttype'] = array(
-    'permanent' => 'Permanent',
-    'probation' => 'Probation',
+    'permanent' => 'Tetap',
+    'probation' => 'Tidak Tetap',
 );
 
 $config['status'] = array(
-    'approve' => 'Approve',
-    'disapprove' => 'Disapprove',
+    'approve' => 'Disetujui',
+    'disapprove' => 'Tidak Disetujui',
     'pending' => 'Pending',
 );
 
 $config['marital_status'] = array(
-    'Single' => 'Single',
-    'Married' => 'Married',
-    'Widowed' => 'Widowed',
-    'Seperated' => 'Seperated',
-    'Not Specified' => 'Not Specified',
+    'Belum Menikah' => 'Belum Menikah',
+    'Menikah' => 'Menikah',
+    'Janda' => 'Janda',
+    'Cerai' => 'Cerai',
+    'Tidak Diketahui' => 'Tidak Diketahui',
 );
 
 $config['payroll_status'] = array(
-    'generated' => 'Generated',
-    'paid' => 'Paid',
-    'unpaid' => 'Unpaid',
-    'not_generate' => 'Not Generated',
+    'generated' => 'Digenerate',
+    'paid' => 'Dibayar',
+    'unpaid' => 'Belum Di Bayar',
+    'not_generate' => 'Belum Di Generate',
 );
 $config['payment_mode'] = array(
     'cash' => 'Cash',
-    'cheque' => 'Cheque',
-    'online' => 'Transfer to Bank Account',
+    'cheque' => 'Cek',
+    'online' => 'Transfer Ke Rekening Bank',
 );
 $config['enquiry_status'] = array(
     'active' => 'Active',
