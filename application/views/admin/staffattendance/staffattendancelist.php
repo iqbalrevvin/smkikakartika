@@ -203,7 +203,7 @@
                                                     <th><?php echo $this->lang->line('name'); ?></th>
                                                     <th><?php echo $this->lang->line('role'); ?></th>
                                                     <th class=""><?php echo $this->lang->line('attendance'); ?></th>
-                                                    <th class=""><?php echo $this->lang->line('note'); ?></th>
+                                                    <th class=""><!-- <?php echo $this->lang->line('note'); ?> -->Catatan/Jam TM</th>
 
                                                 </tr>
                                             </thead>
