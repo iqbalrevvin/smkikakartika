@@ -87,6 +87,13 @@ class Payroll_model extends CI_Model {
 
         return $query->row()->attendence;        
     }
+    function sum_remark($month, $year, $staff_id, $attendance_type = 1) {
+
+
+        $query = $this->db->select('sum(remark) as remark')->where(array('staff_id' => $staff_id, 'month(date)' => $month, 'year(date)' => $year, 'staff_attendance_type_id' => $attendance_type))->get("staff_attendance");
+
+        return $query->row()->remark;        
+    }
 
     function updatePaymentStatus($status, $id) {
 

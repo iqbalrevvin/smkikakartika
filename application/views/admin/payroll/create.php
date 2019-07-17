@@ -115,6 +115,20 @@ $currency_symbol = $this->customlib->getSchoolCurrencyFormat();
                                                 <?php
                                             }
                                             ?>
+                                            <?php
+                                            foreach ($monthRemark as $remark_key => $remark_value) {
+                                                ?><tr>
+                                                    <td colspan="5"><?php echo date("F", strtotime($remark_key)); ?>
+                                                        (Jumlah Jam Tatap Muka) :
+                                                    </td>
+                                                    <td colspan="2" align="center">
+                                                        <b><?php echo $remark_value['present'] ?></b>
+                                                    </td>
+                                                               
+                                                </tr>
+                                                <?php
+                                            }
+                                            ?>
                                             <tr>
 
 

@@ -99,6 +99,7 @@ class Payroll extends Admin_Controller {
         $newdate = date('Y-m-d', strtotime($date . " +1 month"));
 
         $data['monthAttendance'] = $this->monthAttendance($newdate, 3, $id);
+        $data['monthRemark'] = $this->monthRemark($newdate, 3, $id);
         $data['monthLeaves'] = $this->monthLeaves($newdate, 3, $id);
 
         $data["attendanceType"] = $this->staffattendancemodel->getStaffAttendanceType();
@@ -122,6 +123,27 @@ class Payroll extends Admin_Controller {
             foreach ($this->staff_attendance as $att_key => $att_value) {
 
                 $s = $this->payroll_model->count_attendance_obj($month, $year, $emp, $att_value);
+
+
+                $r[$att_key] = $s;
+            }
+
+            $record['01-' . $month . '-' . $year] = $r;
+        }
+        return $record;
+    }
+    function monthRemark($st_month, $no_of_months, $emp) {
+        $record = array();
+        for ($i = 1; $i <= $no_of_months; $i++) {
+
+            $r = array();
+            $month = date('m', strtotime($st_month . " -$i month"));
+            $year = date('Y', strtotime($st_month . " -$i month"));
+
+
+            foreach ($this->staff_attendance as $att_key => $att_value) {
+
+                $s = $this->payroll_model->sum_remark($month, $year, $emp, $att_value);
 
 
                 $r[$att_key] = $s;
