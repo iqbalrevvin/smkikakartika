@@ -2,7 +2,7 @@
     <section class="content-header">
         <h1>
             <i class="fa fa-user-plus"></i> <?php echo $this->lang->line('student_information'); ?>
-		</h1>
+        </h1>
     </section>
     <!-- Main content -->
     <section class="content">
