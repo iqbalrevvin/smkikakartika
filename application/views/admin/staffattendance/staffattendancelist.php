@@ -266,7 +266,7 @@
 
                                                         </td>
                                                         <?php if ($value["date"] == 'xxx') { ?> 
-                                                            <td><input type="text" name="remark<?php echo $value["staff_id"] ?>" ></td>
+                                                            <td><input type="number" name="remark<?php echo $value["staff_id"] ?>" ></td>
                                                         <?php } else { ?>
 
                                                             <td><input type="number" name="remark<?php echo $value["staff_id"] ?>" value="<?php echo $value["remark"]; ?>" ></td>
