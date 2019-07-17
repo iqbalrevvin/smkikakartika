@@ -269,7 +269,7 @@
                                                             <td><input type="text" name="remark<?php echo $value["staff_id"] ?>" ></td>
                                                         <?php } else { ?>
 
-                                                            <td><input type="text" name="remark<?php echo $value["staff_id"] ?>" value="<?php echo $value["remark"]; ?>" ></td>
+                                                            <td><input type="number" name="remark<?php echo $value["staff_id"] ?>" value="<?php echo $value["remark"]; ?>" ></td>
                                                         <?php } ?>
                                                     </tr>
                                                     <?php
