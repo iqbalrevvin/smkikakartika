@@ -747,18 +747,14 @@ if ($staff["is_active"] == 1) {
                                 </div>
                                 <div class="col-md-9 col-sm-9">
                                     <div class="halfday pull-right">
-                                                <?php
-                                                foreach ($attendencetypeslist as $key_type => $value_type) {
-                                                    ?> 
+                                        <?php foreach ($attendencetypeslist as $key_type => $value_type) { ?> 
                                             <b>
-    <?php
-    $att_type = str_replace(" ", "_", strtolower($value_type['type']));
-    echo $this->lang->line($att_type) . ": " . $value_type['key_value'] . "";
-    ?>
+                                            <?php
+                                            $att_type = str_replace(" ", "_", strtolower($value_type['type']));
+                                            echo $this->lang->line($att_type) . ": " . $value_type['key_value'] . "";
+                                            ?>
                                             </b>
-    <?php
-}
-?>
+                                        <?php } ?>
                                     </div>
                                 </div>
                             </div>

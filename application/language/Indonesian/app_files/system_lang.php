@@ -472,6 +472,7 @@ $lang['post_new_message'] = "Posting Pesan Baru";
 $lang['postdate'] = "Tanggal Posting";
 $lang['practical'] = "Praktikum";
 $lang['present'] = "Hadir";
+$lang['hadir'] = "Hadir";
 $lang['previous_school_details'] = "Detail Sekolah Sebelumnya";
 $lang['print'] = "Cetak";
 $lang['print_selected'] = "Cetak Yang Dipilih";
