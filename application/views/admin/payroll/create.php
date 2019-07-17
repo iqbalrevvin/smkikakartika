@@ -122,7 +122,7 @@ $currency_symbol = $this->customlib->getSchoolCurrencyFormat();
                                                         (Jumlah Jam Tatap Muka) :
                                                     </td>
                                                     <td colspan="2" align="center">
-                                                        <b><?php echo $remark_value['present'] ?></b>
+                                                        <b>(<?php echo $remark_value['present'] ?> Jam TM)</b>
                                                     </td>
                                                                
                                                 </tr>
