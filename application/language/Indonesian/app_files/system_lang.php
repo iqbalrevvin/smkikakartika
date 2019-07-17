@@ -1,6 +1,9 @@
 <?php
 
 $lang['absent'] = "Absen";
+$lang['alpa'] = "Alpa";
+$lang['tidak_penuh'] = "Tidak Penuh";
+$lang['libur'] = "Libur";
 $lang['absent_student'] = "Absen Siswa";
 $lang['academic_fees_detail'] = "Akademik Biaya Detail";
 $lang['academics'] = "Akademik";
@@ -364,6 +367,7 @@ $lang['language_rtl_text_mode'] = "Bahasa Rtl Mode Teks";
 $lang['languages'] = "Bahasa";
 $lang['last_name'] = "Nama Terakhir";
 $lang['late'] = "Terlambat";
+$lang['terlambat'] = "Terlambat";
 $lang['late_with_excuse'] = "Terlambat Dengan Alasan";
 $lang['leave'] = "Cuti";
 $lang['librarian'] = "Pustakawan";
