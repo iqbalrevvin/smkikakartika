@@ -3,6 +3,7 @@
 $lang['absent'] = "Absen";
 $lang['alpa'] = "Alpa";
 $lang['izin'] = "Izin";
+$lang['sakit'] = "Sakit";
 $lang['tidak_penuh'] = "Tidak Penuh";
 $lang['libur'] = "Libur";
 $lang['absent_student'] = "Absen Siswa";
