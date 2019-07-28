@@ -1,11 +1,12 @@
 <?php
 
 $config['staffattendance'] = array(
-    'present' => 1,
-    'half_day' => 4,
-    'late' => 2,
-    'absent' => 3,
-    'holiday' => 5
+    'hadir' => 1,
+    'izin' => 2,
+    'terlambat' => 3,
+    'alpa' => 4,
+    'libur' => 5,
+    'sakit' => 6
 );
 
 $config['contracttype'] = array(
