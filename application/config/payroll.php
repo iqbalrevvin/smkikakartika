@@ -5,7 +5,8 @@ $config['staffattendance'] = array(
     'half_day' => 4,
     'late' => 2,
     'absent' => 3,
-    'holiday' => 5
+    'holiday' => 5,
+    'sakit' => 6,
 );
 
 $config['contracttype'] = array(
