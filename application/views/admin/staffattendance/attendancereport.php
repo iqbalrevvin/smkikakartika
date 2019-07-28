@@ -197,7 +197,7 @@
 
                                                 $total_present = ($monthAttendance[$i][$student_value['id']]['present']);
 
-                                                $total_days = $monthAttendance[$i][$student_value['id']]['present'] + $monthAttendance[$i][$student_value['id']]['late'] + $monthAttendance[$i][$student_value['id']]['absent'] + $monthAttendance[$i][$student_value['id']]['half_day'];
+                                                $total_days = $monthAttendance[$i][$student_value['id']]['present'] + $monthAttendance[$i][$student_value['id']]['late'] + $monthAttendance[$i][$student_value['id']]['absent'] + $monthAttendance[$i][$student_value['id']]['half_day'] + $monthAttendance[$i][$student_value['id']]['sakit'];
 
 
                                                 // if($total_days == 0){
