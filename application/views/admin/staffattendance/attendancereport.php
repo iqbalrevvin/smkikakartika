@@ -184,20 +184,18 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-        <?php if (empty($student_array)) {
-            ?>
+                                        <?php if (empty($student_array)) { ?>
                                             <tr>
                                                 <td colspan="32" class="text-danger text-center"><?php echo $this->lang->line('no_record_found'); ?></td>
                                             </tr>
-                                            <?php
-                                        } else {
+                                            <?php } else {
 
                                             $row_count = 1;
                                             $i = 0;
 
                                             foreach ($student_array as $student_key => $student_value) {
 
-                                                $total_present = ($monthAttendance[$i][$student_value['id']]['present'] + $monthAttendance[$i][$student_value['id']]['late'] + $monthAttendance[$i][$student_value['id']]['half_day']);
+                                                $total_present = ($monthAttendance[$i][$student_value['id']]['present']);
 
                                                 $total_days = $monthAttendance[$i][$student_value['id']]['present'] + $monthAttendance[$i][$student_value['id']]['late'] + $monthAttendance[$i][$student_value['id']]['absent'] + $monthAttendance[$i][$student_value['id']]['half_day'];
 
