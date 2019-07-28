@@ -3,8 +3,8 @@
 $config['staffattendance'] = array(
     'present' => 1,
     'half_day' => 4,
-    'late' => 3,
-    'absent' => 2,
+    'late' => 2,
+    'absent' => 4,
     'holiday' => 5
 );
 
