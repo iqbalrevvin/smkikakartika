@@ -2,9 +2,9 @@
 
 $config['staffattendance'] = array(
     'present' => 1,
-    'half_day' => 4,
-    'late' => 2,
-    'absent' => 3,
+    'half_day' => 2,
+    'late' => 3,
+    'absent' => 4,
     'holiday' => 5
 );
 
