@@ -682,7 +682,7 @@ if ($staff["is_active"] == 1) {
                                 <div class="col-lg-3 col-md-3 col-sm-6 col20per">
                                     <div class="staffprofile">
 
-                                        <h5><?php echo $this->lang->line('total'); ?> <?php echo $this->lang->line('late'); ?></h5>
+                                        <h5><?php echo $this->lang->line('total'); ?> <?php echo $this->lang->line('permission'); ?></h5>
                                         <h4><?php echo $countAttendance[date("Y")]["late"] ?></h4> 
                                         <div class="icon">
                                             <i class="fa  fa-check-square-o"></i>
@@ -702,7 +702,7 @@ if ($staff["is_active"] == 1) {
                                 <div class="col-lg-3 col-md-3 col-sm-6 col20per">
                                     <div class="staffprofile">
 
-                                        <h5><?php echo $this->lang->line('total'); ?> <?php echo $this->lang->line('half_day'); ?></h5>
+                                        <h5><?php echo $this->lang->line('total'); ?> <?php echo $this->lang->line('sakit'); ?></h5>
                                         <h4><?php echo $countAttendance[date("Y")]["half_day"] ?></h4> 
                                         <div class="icon">
                                             <i class="fa  fa-check-square-o"></i>
